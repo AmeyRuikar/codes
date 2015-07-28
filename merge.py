@@ -1,5 +1,6 @@
 #! /usr/bin/python
-
+'Merge-Sort is a popular sorting algorithm based on the divide and conquer paradigm.'
+'The working time for merge-sort is bounded by O(nlogn).'
 class merge_sort:
 
     array = []
