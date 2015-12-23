@@ -1,0 +1,94 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf110
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Palatino-Roman;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ___random strings___\
+\pard\pardeftab720\sl300\sa240\partightenfactor0
+
+\f1\fs26 \cf0 \expnd0\expndtw0\kerning0
+The conditions are evaluated from the top downward. \
+As soon as a true condition is found, the statement associated with it is executed and the rest of the ladder is bypassed. \
+\pard\pardeftab720\sl300\sa240\partightenfactor0
+\cf0 The value of a 
+\b ? 
+\b0 expression is determined as follows: 
+\i Exp1 
+\i0 is evaluated. If it is true, 
+\f2\fs24 \
+
+\f1\i\fs26 Exp2 
+\i0 is evaluated and becomes the value of the entire 
+\b ? 
+\b0 expression. If 
+\i Exp1 
+\i0 is false, then 
+\i Exp3 
+\i0 is evaluated and its value becomes the value of the expression. For example, consider \
+If none of the conditions are true, the final 
+\b else 
+\b0 is executed. \
+That is, if all other conditional tests fail, the last 
+\b else 
+\b0 statement is performed. If the final 
+\b else 
+\b0 is not present, no action takes place if all other conditions are false. 
+\f2\fs24 \
+\pard\pardeftab720\sl300\sa240\partightenfactor0
+
+\f1\fs26 \cf0 Although the indentation of the preceding if-else-if ladder is technically correct, it can lead to overly deep indentation. \
+For this reason, the if-else-if ladder is generally indented like this: \
+where 
+\i Exp1
+\i0 , 
+\i Exp2
+\i0 , and 
+\i Exp3 
+\i0 are expressions. \
+Notice the use and placement of the colon. \
+The 
+\i expression 
+\i0 must evaluate to a character or integer value. \
+Floating-point expressions, for example, are not allowed. \
+The value of 
+\i expression 
+\i0 is tested, in order, against the values of the constants specified in the 
+\b case 
+\b0 statements. \
+When a match is found, the statement sequence associated with that 
+\b case 
+\b0 is executed until the 
+\b break 
+\b0 statement or the end of the 
+\b switch 
+\b0 statement is reached. \
+The 
+\b default 
+\b0 statement is executed if no matches are found. The 
+\b default 
+\b0 is optional and, if it is not present, no action takes place if all matches fail. 
+\f2\fs24 \
+
+\f1\fs26 Standard C specifies that a 
+\b switch 
+\b0 can have at least 257 
+\b case 
+\b0 statements. \
+Standard C++ recommends that 
+\i at least 
+\i0 16,384 
+\b case 
+\b0 statements be supported! In practice, you will want to limit the number of 
+\b case 
+\b0 statements to a smaller amount for efficiency. \
+Although 
+\b case 
+\b0 is a label statement, it cannot exist by itself, outside of a 
+\b switch
+\b0 . 
+\f2\fs24 \
+\
+\
+}
