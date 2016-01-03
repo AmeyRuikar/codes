@@ -1,12 +1,14 @@
 #! /usr/bin/python
 
 import re
+import sys
 
 f = open('text.rtf')
 
 exp = re.compile('if', re.I)
 
-count = 10;
+
+count = sys.argv[1];
 lineNumber = 0;
 
 for line in f:
